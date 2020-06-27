@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1076367143167",
+    "firebase_url": "https://weaponoid-uiguru.firebaseio.com",
+    "project_id": "weaponoid-uiguru",
+    "storage_bucket": "weaponoid-uiguru.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1076367143167:android:f89e23391ff044e33bdcca",
+        "android_client_info": {
+          "package_name": "com.weaponoid.uiguru"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1076367143167-b0495reonlrvd32db930pk4fq515tgj0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9DA38ST9SQJnJKQzLgZJKEECqOJyWwfw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1076367143167-b0495reonlrvd32db930pk4fq515tgj0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

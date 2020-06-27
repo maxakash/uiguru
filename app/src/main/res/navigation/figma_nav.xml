@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/figma_nav"
+    app:startDestination="@id/figma">
+
+    <fragment
+        android:id="@+id/figma"
+        android:name="com.weaponoid.uiguru.views.Figma"
+        android:label="UI Guru"
+        tools:layout="@layout/figma_fragment">
+        <action
+            android:id="@+id/figmaToSearch"
+            app:destination="@id/figmaSearch"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+        <action
+            android:id="@+id/figmaToDetail"
+            app:destination="@id/detailFigma" />
+    </fragment>
+    <fragment
+        android:id="@+id/figmaSearch"
+        android:name="com.weaponoid.uiguru.views.FigmaSearch"
+        android:label="Search Results">
+        <argument
+            android:name="searchQuery"
+            app:argType="string" />
+        <argument
+            android:name="type"
+            app:argType="string" />
+        <action
+            android:id="@+id/figmaSearchToDetail"
+            app:destination="@id/detailFigma" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFigma"
+        android:name="com.weaponoid.uiguru.views.DetailFigma"
+        android:label="DetailFigma" >
+        <argument
+            android:name="uiDetail"
+            app:argType="com.weaponoid.uiguru.model.UI" />
+    </fragment>
+</navigation>

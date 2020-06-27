@@ -1,0 +1,29 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:fontFamily">@font/monstt</item>
+        <item name="android:navigationBarColor">@color/darklight</item>
+        <item name="searchViewStyle">@style/SearchViewMy</item>
+    </style>
+
+    <style name="SearchViewMy" parent="Widget.AppCompat.SearchView">
+        <item name="searchHintIcon">@null</item>
+        <item name="defaultQueryHint">@string/search</item>
+        <item name="submitBackground">@color/colorPrimary</item>
+        <item name="queryBackground">@color/colorPrimary</item>
+    </style>
+
+    <style name="AlertDialogStyle" parent="Animation.Design.BottomSheetDialog">
+        <item name="android:textColor">#f2f2f2</item>
+        <item name="android:textColorPrimary">#f2f2f2</item>
+        <item name="textColorAlertDialogListItem">#f2f2f2</item>
+        <item name="buttonTint">@color/colorAccent</item>
+
+    </style>
+
+
+</resources>

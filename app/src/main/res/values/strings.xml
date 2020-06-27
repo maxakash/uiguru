@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">UI Guru</string>
+    <string name="listimage">listimage</string>
+    <string name="search">Search</string>
+    <string name="filter">Filter</string>
+    <string name="adobexd">Adobe XD</string>
+    <string name="Sketch">Sketch</string>
+    <string name="Figma">Figma</string>
+    <string name="more">More</string>
+    <string name="all">All</string>
+    <string name="mobile">Mobile</string>
+    <string name="website">Website</string>
+    <string name="misc">Miscellaneous</string>
+    <string name="selectcategory">Select Category</string>
+    <string name="categoryerror">Please select category</string>
+    <string name="apply">Apply</string>
+    <string name="designer">Designer</string>
+    <string name="source">Source</string>
+    <string name="notification">Notifications</string>
+    <string name="rateapp">Rate App</string>
+    <string name="privacy">Privacy Policy</string>
+    <string name="contact">Contact Us</string>
+    <string name="about">About </string>
+    <string-array name="uiType">
+        <item>xd</item>
+        <item>sketch</item>
+        <item>figma</item>
+    </string-array>
+    <string-array name="category">
+        <item>mobile</item>
+        <item>website</item>
+        <item>misc</item>
+    </string-array>
+</resources>

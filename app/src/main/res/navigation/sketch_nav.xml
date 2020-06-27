@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sketch_nav"
+    app:startDestination="@id/sketch">
+
+    <fragment
+        android:id="@+id/sketch"
+        android:name="com.weaponoid.uiguru.views.Sketch"
+        android:label="UI Guru"
+        tools:layout="@layout/sketch_fragment">
+        <action
+            android:id="@+id/sketchToDetail"
+            app:destination="@id/detail2"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+        <action
+            android:id="@+id/sketchToSearch"
+            app:destination="@id/sketchSearch"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/detail2"
+        android:name="com.weaponoid.uiguru.views.Detail"
+        android:label="Detail" >
+        <argument
+            android:name="uiDetail"
+            app:argType="com.weaponoid.uiguru.model.UI" />
+    </fragment>
+    <fragment
+        android:id="@+id/sketchSearch"
+        android:name="com.weaponoid.uiguru.views.SketchSearch"
+        android:label="Search Results">
+        <action
+            android:id="@+id/sketchSearchToDetail"
+            app:destination="@id/detail2"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+        <argument
+            android:name="searchQuery"
+            app:argType="string" />
+        <argument
+            android:name="type"
+            app:argType="string" />
+    </fragment>
+</navigation>

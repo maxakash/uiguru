@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/xd_nav"
+    app:startDestination="@id/adobeXD">
+
+    <fragment
+        android:id="@+id/adobeXD"
+        android:name="com.weaponoid.uiguru.views.AdobeXD"
+        android:label="UI Guru"
+        tools:layout="@layout/adobexd_fragment">
+        <action
+            android:id="@+id/xdToDetail"
+            app:destination="@id/detail4"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+        <action
+            android:id="@+id/xdToSearch"
+            app:destination="@id/xdSearch"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/detail4"
+        android:name="com.weaponoid.uiguru.views.Detail"
+        android:label="Detail" >
+        <argument
+            android:name="uiDetail"
+            app:argType="com.weaponoid.uiguru.model.UI" />
+    </fragment>
+    <fragment
+        android:id="@+id/xdSearch"
+        android:name="com.weaponoid.uiguru.views.XdSearch"
+        android:label="Search Results">
+        <argument
+            android:name="searchQuery"
+            app:argType="string" />
+        <argument
+            android:name="type"
+            app:argType="string" />
+        <action
+            android:id="@+id/xdSearchToDetail"
+            app:destination="@id/detail4"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+</navigation>

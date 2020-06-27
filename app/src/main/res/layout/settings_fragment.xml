@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    
+    <data>
+        <variable
+            name="listener"
+            type="com.weaponoid.uiguru.util.UIDetailListener" />
+    </data>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context=".views.Settings">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/settingsToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleTextColor="#ffffff" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/border_cardview"
+        android:orientation="vertical">
+
+
+        <!--Switch
+            android:id="@+id/notification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:checked="false"
+            android:text="@string/notification"
+            android:textColor="#f2f2f2"
+            android:textSize="18sp"
+
+            /-->
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:tag="rate"
+            android:onClick="@{listener::onClick}"
+            android:text="@string/rateapp"
+            android:textColor="#f2f2f2"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="@string/privacy"
+            android:tag="privacy"
+            android:onClick="@{listener::onClick}"
+            android:textColor="#f2f2f2"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:tag="contact"
+            android:onClick="@{listener::onClick}"
+            android:text="@string/contact"
+            android:textColor="#f2f2f2"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:tag="about"
+            android:onClick="@{listener::onClick}"
+            android:text="@string/about"
+            android:textColor="#f2f2f2"
+            android:textSize="18sp" />
+
+        <!--TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:tag="add"
+            android:onClick="@{listener::onClick}"
+            android:text="Add UI Items"
+            android:textColor="#f2f2f2"
+            android:textSize="18sp" /-->
+
+
+    </LinearLayout>
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:text="App Version 1.0.6"
+        android:textColor="#f2f2f2"
+        android:textSize="12sp" />
+
+
+</LinearLayout>
+
+</layout>

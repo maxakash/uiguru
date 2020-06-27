@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/settings_nav"
+    app:startDestination="@id/settings">
+
+    <fragment
+        android:id="@+id/settings"
+        android:name="com.weaponoid.uiguru.views.Settings"
+        android:label="Settings"
+        tools:layout="@layout/settings_fragment">
+        <action
+            android:id="@+id/settingdToAdd"
+            app:destination="@id/addItem" />
+    </fragment>
+    <fragment
+        android:id="@+id/addItem"
+        android:name="com.weaponoid.uiguru.views.AddItem"
+        android:label="AddItem" />
+</navigation>
